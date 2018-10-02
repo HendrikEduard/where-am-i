@@ -1,0 +1,17 @@
+{
+  "name": "geolocation",
+  "version": "1.0.0",
+  "description": "A HTML, Javascript & CSS Geolocation page.",
+  "main": "index.html",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HendrikEduard/where-am-i.git"
+  },
+  "keywords": [
+    "html",
+    "javascript"
+  ],
+  "author": "Hendrik Eduard Kuiper",
+  "license": "MIT",
+  "homepage": "https://github.com/HendrikEduard/where-am-i#readme"
+}

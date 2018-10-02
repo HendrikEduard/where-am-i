@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{padding-top:30vh;background: #def;color: #006;}
+        h1{text-align:center;text-decoration:underline;cursor:pointer;}
+        #map{text-align: center;font-size:1.6rem;}
+        a{color: #007f00; text-decoration:none;}</style>
+  </head>
+  <body>
+    <h1 onclick="findMe();">Where am I?</h1>
+    <div id="map"></div>
+    <script>
+      function findMe(){
+        if(!navigator.geolocation){
+          alert("Please upgrade to a modern browser.");
+          return;
+        }
+        navigator.geolocation.getCurrentPosition(function(pos){
+          a = pos.coords.latitude +',' + pos.coords.longitude;
+          document.getElementById("map").innerHTML =' <a href="http://www.google.com/search?q=' + a + ' ">  Click here to see the map</a>';
+        });
+      }
+    </script>
+  </body>
+</html>
